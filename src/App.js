@@ -10,6 +10,10 @@ function App() {
   const [password, setPassword] = useState("")
 
 
+  //useRef hook
+  const passwordRef = useRef(null)
+
+
 //useCallback
   const passwordGenerator = useCallback(() => {
     let pass = ""
