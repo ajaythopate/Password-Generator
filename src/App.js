@@ -1,6 +1,13 @@
+import { useState } from "raect";
 import "./App.css";
 
 function App() {
+
+  //useState
+  const [length, setLength] = useState(8)
+  const [numberAllowed, setNumberAllowed] = useState(false);
+  const [charAllowed, setCharAllowed] = useState(false)
+  const [password, setPassword] = useState("")
   
 
   return (
@@ -16,10 +23,10 @@ function App() {
             readOnly
             ref={passwordRef}
           />
-           <button
-        onClick={copyPasswordToClipboard}
-        className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
-        >copy</button>
+          <button
+            onClick={copyPasswordToClipboard}
+            className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
+          >copy</button>
         </div>
         
       </div>
