@@ -37,6 +37,10 @@ function App() {
     window.navigator.clipboard.writeText(password)
   }, [password])
 
+//useEffect
+  useEffect(() => {
+    passwordGenerator()
+  }, [length, numberAllowed, charAllowed, passwordGenerator])
 
   return (
     <>
